@@ -1,0 +1,6 @@
+<ul data-booklist-list>
+  <li *ngFor="let book of books$ | async; index as idx">
+    <span [attr.data-booklist-title]="idx">{{book.title}}</span> by <span
+          [attr.data-booklist-author]="idx">{{book.author}}</span>
+  </li>
+</ul>

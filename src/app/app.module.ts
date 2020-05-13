@@ -5,17 +5,22 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BasicComponent } from './components/basic/basic.component';
 import { GreeterService } from './components/basic/greeter.service';
+import { HttpClientModule } from '@angular/common/http';
+import { BooklistComponent } from './components/booklist/booklist.component';
+import { BooksDataService } from './services/books.data.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BasicComponent
+    BasicComponent,
+    BooklistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [GreeterService],
+  providers: [GreeterService, BooksDataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
