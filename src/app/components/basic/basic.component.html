@@ -1,0 +1,11 @@
+<p>Super <span>Basic</span> Thing</p>
+<input type="text"
+       data-basic-input
+       id="name"
+       #name>
+<button data-basic-button
+        (click)="sayHi(name.value)">Click Me</button>
+<h1>
+  <span data-greeting-prefix>{{greetingPrefix}}</span>
+  <span data-basic-greeting>{{ greeting }}</span>
+</h1>

@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "few400testing"
+    }
+  },
+  "defaultProject": "few400testing",
+  "cli": {
+    "analytics": "7b93916e-7acd-416c-8f42-9b27e9b26f3b"
+  }
 }

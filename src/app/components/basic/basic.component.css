@@ -1,0 +1,23 @@
+button {
+  background-color: purple;
+}
+
+header>h1 { /* immediate child */
+  color: red;
+}
+
+header h1 { /* descendent selector */
+
+}
+
+#clickme { /* id selector */
+
+}
+
+.fancy { /* class selector */
+
+}
+
+.form-group .fancy {
+  
+}
