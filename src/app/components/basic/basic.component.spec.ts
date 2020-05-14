@@ -52,3 +52,7 @@ describe('testing a component', () => {
     expect(spanElement.innerText).toBe('Tacos');
   });
 });
+
+function getElement<T>(fixture: any, selector: string): T {
+  return fixture.debugElement.query(By.css(selector)).nativeElement as T;
+}

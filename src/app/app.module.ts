@@ -12,6 +12,7 @@ import { CounterComponent } from './components/counter/counter.component';
 import { StoreModule } from '@ngrx/store';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { reducers } from './reducers';
+import { ToysModule } from './features/toys/toys.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +22,7 @@ import { reducers } from './reducers';
   ],
   imports: [
     BrowserModule,
+    ToysModule,
     AppRoutingModule,
     HttpClientModule,
     StoreModule.forRoot(reducers),
