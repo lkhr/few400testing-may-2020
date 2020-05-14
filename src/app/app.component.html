@@ -1,1 +1,11 @@
-<app-booklist></app-booklist>
+<header>
+  <h1>Angular Testing Stuff</h1>
+</header>
+<main>
+  <ul>
+    <li><a [routerLink]="['basic']">Basic</a></li>
+    <li><a [routerLink]="['book-list']">Book List</a></li>
+    <li><a [routerLink]="['counter']">Counter</a></li>
+  </ul>
+  <router-outlet></router-outlet>
+</main>
