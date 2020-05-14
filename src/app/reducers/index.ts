@@ -24,3 +24,17 @@ export const selectCurrentCount = createSelector(
   selectCounterBranch,
   b => b.current
 );
+
+// added for testing examples
+
+export const selectCountingBy = createSelector(
+  selectCounterBranch,
+  b => b.by
+);
+
+
+export const selectDecrementDisabled = createSelector(
+  selectCountingBy,
+  selectCurrentCount,
+  (by, current) => current - by < 0
+);
