@@ -9,12 +9,16 @@ import { Observable } from 'rxjs';
   styleUrls: ['./booklist.component.css']
 })
 export class BooklistComponent implements OnInit {
-
+  message = '';
   books$: Observable<BookEntity[]>;
   constructor(private service: BooksDataService) { }
 
   ngOnInit(): void {
     this.books$ = this.service.getBooks();
+  }
+
+  clickMe() {
+    this.message = 'Hello, World!';
   }
 
 }
